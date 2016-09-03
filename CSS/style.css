@@ -17,6 +17,10 @@ body {
 
 }
 
+h2 {
+	font-family: 'Merriweather', serif;
+}
+
 h3 {
 	font-family: tahoma;
 }
@@ -52,7 +56,7 @@ GLOBAL ELEMENTS
 	padding-left: 2%;
 }
 
-.header {
+.main-bar {
 	padding: 10px;
 	background-color: #fff;
 	border-top: 1px solid #f2f2f2;
@@ -162,7 +166,8 @@ INDEX.HTML
 	background-color: #F3F3F3;
   	background: red;
   	background: linear-gradient(red, orange);
-  	background: linear-gradient(#272822, #282E73);
+  	/*background: linear-gradient(#272822, #282E73);*/
+  	box-shadow: inset -1px -1px 30px #30303A;
 }
 
 .hero .wrapper {
@@ -172,7 +177,6 @@ INDEX.HTML
 
 .hero img {
 	margin: 0 auto;
-    padding: 40px;
     max-width: 80%;
     display: block;
 }
@@ -208,6 +212,10 @@ INDEX.HTML
 	text-align: center;
 }
 
+.category img {
+	width: 100%;
+}
+
 
 
 
@@ -216,10 +224,95 @@ INDEX.HTML
 STORE.HTML
 ***********************************************************/
 
-#map {
-	margin-top: 100px;
-	text-align: center;
+.store-info {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 30px;
 }
+
+
+.info li {
+	list-style-type: none;
+
+}
+
+.store-info img {
+	width: 75%;
+	margin-top: 30px;
+}
+
+.info {
+	float: right;
+ /*   background-color: #f2f2f2;
+    padding: 20px;*/
+    height: 410px;
+    margin-top: 30px;
+}
+
+.info h3 {
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+/**********************************************************
+MEDIA QUERIES
+***********************************************************/
+
+@media screen and (max-width: 1024px) {
+
+
+	.category {
+		width: 29%;
+	}
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.products {
+		padding: 5px;
+	}
+
+	.category {
+		width: 28%;
+	}
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+	.products {
+		padding: 5px;
+	}
+
+	.category {
+		width: 41%;
+	}
+
+
+}
+
+@media screen and (max-width: 479px) {
+
+
+
+	.category {
+		width: 46%;
+		padding: 5px;
+	}
+
+
+}
+
+
 
 
 
