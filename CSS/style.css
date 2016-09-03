@@ -223,9 +223,40 @@ INDEX.HTML
 /**********************************************************
 STORE.HTML
 ***********************************************************/
-
-.store-info {
+.main-content {
 	max-width: 1200px;
+	display: inline-block;
+}
+
+.main-container {
+    max-width: 70%;
+    float: left;
+}
+
+aside {
+	float: left;
+	max-width: 240px;
+	display: inline-block;
+}
+
+.map {
+	float: left;
+}
+
+.store-img {
+	display: inline-block;
+}
+
+.store-img img {
+	width: 700px;
+}
+
+
+
+
+
+/*.store-info {
+	max-width: 75%;
 	margin: 0 auto;
 	padding: 30px;
 }
@@ -245,14 +276,14 @@ STORE.HTML
 	float: right;
  /*   background-color: #f2f2f2;
     padding: 20px;*/
-    height: 410px;
+/*    height: 410px;
     margin-top: 30px;
 }
 
 .info h3 {
 	margin-top: 0;
 }
-
+*/
 
 
 
