@@ -14,7 +14,10 @@
 /* End hide from IE-mac */
 
 body {
+}
 
+h1 {
+	font-family: 'Merriweather', serif;
 }
 
 h2 {
@@ -22,7 +25,7 @@ h2 {
 }
 
 h3 {
-	font-family: tahoma;
+	font-family: 'Lato', sans-serif;
 }
 
 ul {
@@ -57,7 +60,7 @@ GLOBAL ELEMENTS
 }
 
 .main-bar {
-	padding: 10px;
+	padding: 20px;
 	background-color: #fff;
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
@@ -96,14 +99,19 @@ GLOBAL ELEMENTS
 .nav ul li {
 	float: right;
 	display: inline-block;
-	padding-left: 20px;
+	padding-left: 40px;
 	list-style-type: none;
 
 }
 
 .nav a {
 	color: #272822;
-	/*text-transform: uppercase;*/
+	text-transform: uppercase;
+	transition: color .1s ease-out;
+}
+
+.nav a:hover {
+	color: magenta;
 }
 
 .footer {
@@ -234,13 +242,23 @@ STORE.HTML
 }
 
 aside {
-	float: left;
+	float: right;
 	max-width: 240px;
 	display: inline-block;
 }
 
+.contact-info ul li {
+	list-style-type: none;
+	font-family: 'Lato', sans-serif;
+}
+
+.hours ul li {
+	list-style-type: none;
+	font-family: 'Lato', sans-serif;
+}
+
 .map {
-	float: left;
+	
 }
 
 .store-img {
@@ -251,39 +269,53 @@ aside {
 	width: 700px;
 }
 
+.outer-wrapper {
+	/*background-color: blue;*/
+	width: 100%;
 
+}
 
-
-
-/*.store-info {
-	max-width: 75%;
+.inner-wrapper {
+	/*background-color: red;*/
+	max-width: 80%;
 	margin: 0 auto;
-	padding: 30px;
+	padding: 20px;
 }
 
 
-.info li {
+/**********************************************************
+CATALOG.HTML
+***********************************************************/
+
+.container {
+	max-width: 1200px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+
+.container h3 {
+	border-top: 2px solid #f2f2f2;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.column {
+	display: inline-block;
+	width: 24%;
+/* 	background-color: magenta; */
+}
+
+.column li {
 	list-style-type: none;
-
+	margin: 5px;
 }
 
-.store-info img {
-	width: 75%;
-	margin-top: 30px;
+.column ul {
+	padding: 0;
 }
 
-.info {
-	float: right;
- /*   background-color: #f2f2f2;
-    padding: 20px;*/
-/*    height: 410px;
-    margin-top: 30px;
-}
-
-.info h3 {
-	margin-top: 0;
-}
-*/
 
 
 
