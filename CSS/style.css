@@ -114,7 +114,7 @@ GLOBAL ELEMENTS
 	color: magenta;
 }
 
-.footer {
+.footer-top {
 	background-color: #fff;
 	height: 100px;
 	width: 100%;
@@ -140,9 +140,9 @@ GLOBAL ELEMENTS
 	text-align: center;
 }
 
-.footer-top {
+/*.footer-top {
 	height: 100px;
-}
+}*/
 
 .address {
 	float: left;
@@ -172,9 +172,10 @@ INDEX.HTML
 .hero {
 	width: 100%;
 	background-color: #F3F3F3;
-  	background: red;
-  	background: linear-gradient(red, orange);
-  	/*background: linear-gradient(#272822, #282E73);*/
+  	/*background: red;*/
+  	/*background: linear-gradient(red, orange);*/
+  	/*background: linear-gradient(#272822, #fff);*/
+  	/*background: url("https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/metal-holes.jpg");*/
   	box-shadow: inset -1px -1px 30px #30303A;
 }
 
