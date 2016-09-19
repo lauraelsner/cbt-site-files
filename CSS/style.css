@@ -33,14 +33,14 @@ ul {
 }
 
 a {
+	font-weight: 600;
 	text-decoration: none;
 	font-family: 'Lato', sans-serif;
-	font-weight: 600;
 }
 
 p {
-	font-family: 'Lato', sans-serif;
 	font-weight: 400;	
+	font-family: 'Lato', sans-serif;
 }
 
 
@@ -49,9 +49,9 @@ GLOBAL ELEMENTS
 ***********************************************************/
 
 .top-bar {
-	background-color: #282E73;
 	color: #fff;
 	padding: 10px;
+	background-color: #282E73;
 }
 
 .top-bar p {
@@ -78,13 +78,15 @@ GLOBAL ELEMENTS
 
 .utility-nav ul li {
 	float: right;
-	display: inline-block;
 	padding-left: 20px;
+	display: inline-block;
 	list-style-type: none;
 }
 
 .utility-nav a {
-	color: #282E73;
+	color: #272822;
+	font-size: 14px;
+	text-transform: uppercase;
 }
 
 .nav {
@@ -98,26 +100,26 @@ GLOBAL ELEMENTS
 
 .nav ul li {
 	float: right;
-	display: inline-block;
 	padding-left: 40px;
+	display: inline-block;
 	list-style-type: none;
 
 }
 
 .nav a {
-	color: #272822;
+	color: #1B1F4B;
 	text-transform: uppercase;
 	transition: color .1s ease-out;
 }
 
 .nav a:hover {
-	color: magenta;
+	color: #272822;
 }
 
 .footer-top {
-	background-color: #fff;
-	height: 100px;
 	width: 100%;
+	height: 100px;
+	background-color: #fff;
 	background-color: #f2f2f2;
 }
 
@@ -132,17 +134,14 @@ GLOBAL ELEMENTS
 .cards {
 	height: 30px;
 	float: right;
-	display: inline-block;
 	margin: 20px;
+	display: inline-block;
 }
 
 .footer .wrapper {
 	text-align: center;
 }
 
-/*.footer-top {
-	height: 100px;
-}*/
 
 .address {
 	float: left;
@@ -150,16 +149,17 @@ GLOBAL ELEMENTS
 }
 
 .bottom-bar {
-	background-color: #282E73;
 	color: #fff;
 	padding: 10px;
 	text-align: center;
+	background-color: #282E73;
 }
 
 #logo {
 	margin: 0 auto;
 	display: inline-block;
 }
+
 
 /**********************************************************
 INDEX.HTML
@@ -172,11 +172,18 @@ INDEX.HTML
 .hero {
 	width: 100%;
 	background-color: #F3F3F3;
-  	/*background: red;*/
-  	/*background: linear-gradient(red, orange);*/
-  	/*background: linear-gradient(#272822, #fff);*/
-  	/*background: url("https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/metal-holes.jpg");*/
-  	box-shadow: inset -1px -1px 30px #30303A;
+	padding: 20px;
+  	background: url("https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/hero-background.jpg");
+}
+
+.hero .text {
+	width: 400px;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.hero .text h1 {
+	margin-top: 0;
 }
 
 .hero .wrapper {
@@ -187,7 +194,7 @@ INDEX.HTML
 .hero img {
 	margin: 0 auto;
     max-width: 80%;
-    display: block;
+    display: inline-block;
 }
 
 
@@ -215,9 +222,9 @@ INDEX.HTML
 }
 
 .category {
+	width: 21%;
 	float: left;
 	padding: 20px;
-	width: 21%;
 	text-align: center;
 }
 
@@ -225,8 +232,29 @@ INDEX.HTML
 	width: 100%;
 }
 
+.see-all{
+	height: 100px;
+}
 
+.button {
+    color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 16px;
+    border-radius: 1px;
+    text-align: center;
+	letter-spacing: .02em;
+    text-transform: uppercase;
+    background-color: #0dbdbb;
+    transition: all .2s ease-out;
+	font-family: 'Lato', sans-serif;
+}
 
+.button:hover {
+	cursor: pointer;
+	background-color: #0d9cc8;
+}
 
 
 /**********************************************************
@@ -238,8 +266,8 @@ STORE.HTML
 }
 
 .main-container {
-    max-width: 70%;
     float: left;
+    max-width: 70%;
 }
 
 aside {
@@ -258,10 +286,6 @@ aside {
 	font-family: 'Lato', sans-serif;
 }
 
-.map {
-	
-}
-
 .store-img {
 	display: inline-block;
 }
@@ -271,13 +295,10 @@ aside {
 }
 
 .outer-wrapper {
-	/*background-color: blue;*/
 	width: 100%;
-
 }
 
 .inner-wrapper {
-	/*background-color: red;*/
 	max-width: 80%;
 	margin: 0 auto;
 	padding: 20px;
@@ -289,28 +310,27 @@ CATALOG.HTML
 ***********************************************************/
 
 .container {
-	max-width: 1200px;
-	padding: 20px;
 	margin: 0 auto;
+	padding: 20px;
+	max-width: 1200px;
 }
 
 
 .container h3 {
-	border-top: 2px solid #f2f2f2;
+	font-size: 16px;
 	padding-top: 20px;
 	text-transform: uppercase;
-	font-size: 16px;
+	border-top: 2px solid #f2f2f2;
 }
 
 .column {
 	display: inline-block;
 	width: 24%;
-/* 	background-color: magenta; */
 }
 
 .column li {
-	list-style-type: none;
 	margin: 5px;
+	list-style-type: none;
 }
 
 .column ul {
