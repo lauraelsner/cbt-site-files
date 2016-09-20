@@ -184,6 +184,7 @@ INDEX.HTML
 
 .hero .text h1 {
 	margin-top: 0;
+	max-width: 80%;
 }
 
 .hero .wrapper {
@@ -361,7 +362,7 @@ MEDIA QUERIES
 	}
 
 
-	/*INDEX.HTML*/	
+	/*pushdown nav*/	
 
 	.nav {
 		display: none;
@@ -369,8 +370,8 @@ MEDIA QUERIES
 
 	.mobile-menu {
 		float: right;
-		margin-top: 20px;
-		margin-right: 20px;
+		margin-top: 40px;
+		/*margin-right: 20px;*/
 		display: inline-block;	
 	}
 
@@ -435,6 +436,12 @@ MEDIA QUERIES
 	}
 
 
+	/*Utility Nav*/
+
+	.utility-nav {
+		display: none;
+	}
+
 }
 
 
@@ -460,6 +467,9 @@ MEDIA QUERIES
 		padding: 5px;
 	}
 
+	#logo {
+		width: 75%;
+	}
 
 }
 
