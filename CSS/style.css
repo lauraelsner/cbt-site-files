@@ -260,21 +260,7 @@ INDEX.HTML
 /**********************************************************
 STORE.HTML
 ***********************************************************/
-.main-content {
-	max-width: 1200px;
-	display: inline-block;
-}
 
-.main-container {
-    float: left;
-    max-width: 70%;
-}
-
-aside {
-	float: right;
-	max-width: 240px;
-	display: inline-block;
-}
 
 .contact-info ul li {
 	list-style-type: none;
@@ -291,18 +277,11 @@ aside {
 }
 
 .store-img img {
-	width: 700px;
+	max-width: 1200px;
+	margin-top: 20px;
 }
 
-.outer-wrapper {
-	width: 100%;
-}
 
-.inner-wrapper {
-	max-width: 80%;
-	margin: 0 auto;
-	padding: 20px;
-}
 
 
 /**********************************************************
@@ -347,6 +326,20 @@ CATALOG.HTML
 MEDIA QUERIES
 ***********************************************************/
 
+@media screen and (max-width: 4001px) {
+
+	.mobile-menu {
+		display: none;
+	}
+
+	.menu-open {
+		display: none;
+	}
+
+}
+
+
+
 @media screen and (max-width: 1024px) {
 
 
@@ -365,6 +358,80 @@ MEDIA QUERIES
 
 	.category {
 		width: 28%;
+	}
+
+
+	/*INDEX.HTML*/	
+
+	.nav {
+		display: none;
+	}
+
+	.mobile-menu {
+		float: right;
+		margin-top: 20px;
+		margin-right: 20px;
+		display: inline-block;	
+	}
+
+	.mobile-menu .wrapper {
+		float: right;
+		display: inline-block;
+	}
+
+	.line {
+		height: 4px;
+		width: 37px;
+		margin: 6px;
+		background-color: #00BAC9;
+		background-color: #114C6F;
+	}
+
+	.mobile-menu:hover {
+		cursor: pointer;
+	}
+
+	.mobile-menu:hover {
+		cursor: pointer;
+	}
+
+	.mobile-menu .wrapper {
+		float: right;
+	}
+
+	.line {
+		height: 4px;
+		width: 37px;
+		margin: 6px;
+		background-color: #2D2D2D;	
+	}
+
+	.menu-open {
+		width: 100%;
+		display: none;
+		z-index: 1000;
+		position: fixed;
+	}	
+
+	.menu-open:nth-child(2) {
+    	border-bottom: 3px solid #00BAC9;
+	}	
+
+	.nav-item {
+		width: 100%;
+		color: #000;
+		padding: 10px 0;
+		text-align: center;
+		background-color: #FFF;
+		border-top: 1px solid #f2f2f2;
+	}
+
+	.nav-item:hover {
+		background-color: #f2f2f2;
+	}
+
+	.nav-item:active {
+		background-color: #f2f2f2;
 	}
 
 
