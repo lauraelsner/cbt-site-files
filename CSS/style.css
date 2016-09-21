@@ -170,7 +170,7 @@ INDEX.HTML
 /*hero*/
 
 .hero {
-	width: 100%;
+	/*width: 100%;*/
 	background-color: #F3F3F3;
 	padding: 20px;
   	background: url("https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/hero-background.jpg");
@@ -337,6 +337,11 @@ MEDIA QUERIES
 		display: none;
 	}
 
+	.utility-nav-mobile ul {
+		display: none;
+	}
+
+
 }
 
 
@@ -411,11 +416,11 @@ MEDIA QUERIES
 		width: 100%;
 		display: none;
 		z-index: 1000;
-		position: fixed;
+		/*position: fixed;*/
 	}	
 
 	.menu-open:nth-child(2) {
-    	border-bottom: 3px solid #00BAC9;
+    	border-bottom: 3px solid red;
 	}	
 
 	.nav-item {
@@ -441,6 +446,28 @@ MEDIA QUERIES
 	.utility-nav {
 		display: none;
 	}
+
+	.utility-nav-mobile {
+		background-color: #f2f2f2;
+		padding: 10px 10px 10px 20px;
+		color: red;
+	}
+
+	.utility-nav-mobile ul {
+		margin: 0;
+		display: inline-block;
+		list-style-type: none;
+	}
+
+	.utility-nav-mobile ul li {
+		float: right;
+		margin-right: 40px;
+	}
+
+	.utility-nav-mobile a {
+		color: black;
+	}
+
 
 }
 
