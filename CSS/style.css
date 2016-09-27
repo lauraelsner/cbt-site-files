@@ -52,6 +52,7 @@ GLOBAL ELEMENTS
 	color: #fff;
 	padding: 10px;
 	background-color: #282E73;
+	/*background-color: #373533;*/
 }
 
 .top-bar p {
@@ -180,6 +181,17 @@ INDEX.HTML
 
 .hero {
   background-color: #ff00ff;
+  width: 100%;
+}
+
+/*hero*/
+
+.hero {
+	width: 100%;
+	background-color: #F3F3F3;
+  	background: red;
+  	background: linear-gradient(red, orange);
+  	background: url("https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/hero-background.jpg");
 }
 
 .hero .wrapper {
@@ -203,6 +215,9 @@ INDEX.HTML
   float: right;
 }
 
+.hero .button {
+	float: right;
+}
 
 
 /*products***********************/
@@ -255,11 +270,11 @@ INDEX.HTML
 
 .button {
     color: #fff;
-    padding: 20px;
+    padding: 15px;
     margin: 0 auto;
     max-width: 200px;
     font-size: 16px;
-    border-radius: 1px;
+    border-radius: 3px;
     text-align: center;
 	letter-spacing: .02em;
     text-transform: uppercase;
@@ -277,6 +292,30 @@ INDEX.HTML
 /**********************************************************
 STORE.HTML
 ***********************************************************/
+
+.store-hero {
+	width: 100%;
+	background-color: #F3F3F3;
+  	background: url('https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/store-hero.jpg');
+  	height: 350px;
+  	background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.store-hero .wrapper {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+.wrapper .store-hero-text {
+  color: white;
+  margin: 0;
+}
+
+.store-hero-text h1 {
+	margin-top: 0px;
+}
+
 
 
 .contact-info ul li {
@@ -304,6 +343,13 @@ STORE.HTML
 /**********************************************************
 CATALOG.HTML
 ***********************************************************/
+
+.catalog-hero {
+	width: 100%;
+	background-color: #F3F3F3;
+  	background: url('https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/hero-background.jpg');
+  	height: 350px;
+}
 
 .container {
 	margin: 0 auto;
