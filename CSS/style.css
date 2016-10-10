@@ -28,8 +28,20 @@ h3 {
 	font-family: 'Lato', sans-serif;
 }
 
+h4 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #CCCCCC;
+}
+
 ul {
 	padding: 0;
+}
+
+li {
+	font-family: 'Lato', sans-serif;
+	font-weight: 200;
 }
 
 a {
@@ -39,7 +51,7 @@ a {
 }
 
 p {
-	font-weight: 400;	
+	font-weight: 300;	
 	font-family: 'Lato', sans-serif;
 }
 
@@ -119,33 +131,37 @@ GLOBAL ELEMENTS
 
 .footer-top {
 	background-color: #E8E8E8;
+	padding: 10px;
 }
 
 .footer .left {
 	width: 33%;
 	float: left;
-}
-
-.footer .left ul {
-	margin: 20px;
-	list-style-type: none;
-}	
-
-.footer .left .heading {
-	font-family: "Merriweather", serif;
-	margin-bottom: 8px;
-	font-weight: 800;
-	font-size: 18px;
+	text-align: center;
 }
 
 .footer .left .wrapper {
 	max-width: 250px;
 }
 
+.footer #logo {
+	width: 75%;
+	/*margin: 5px;*/
+}
+
 .footer .middle {
 	width: 33%;
 	float: left;
 	text-align: center;
+}
+
+.footer .middle ul {
+	margin: 20px 0;
+	list-style-type: none;
+}
+
+.footer .middle li {
+	line-height: 1.5em;
 }
 
 .footer .middle img {
@@ -161,6 +177,7 @@ GLOBAL ELEMENTS
 
 .footer .right img {
     padding-top: 20px;
+    margin: 20px;
 }
 
 .footer-bottom {
@@ -288,54 +305,68 @@ INDEX.HTML
 	background-color: #0d9cc8;
 }
 
+.button-secondary {
+    color: #0DBDBB;
+    border: 1px solid #0DBDBB;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 200px;
+    font-size: 16px;
+    border-radius: 3px;
+    text-align: center;
+	letter-spacing: .02em;
+    text-transform: uppercase;
+    background-color: #fff;
+    transition: all .2s ease-out;
+	font-family: 'Lato', sans-serif;
+}
+
+.button-secondary:hover {
+	cursor: pointer;
+	background-color: #fff;
+	color: #0d9cc8;
+	border: 1px solid #0d9cc8;
+}
+
 
 /**********************************************************
 STORE.HTML
 ***********************************************************/
 
-.store-hero {
-	width: 100%;
-	background-color: #F3F3F3;
-  	background: url('https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/store-hero.jpg');
-  	height: 350px;
-  	background-repeat: no-repeat;
-    background-position: center; 
-}
-
-.store-hero .wrapper {
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
-.wrapper .store-hero-text {
-  color: white;
-  margin: 0;
-}
-
-.store-hero-text h1 {
-	margin-top: 0px;
-}
-
-
-
-.contact-info ul li {
-	list-style-type: none;
-	font-family: 'Lato', sans-serif;
-}
-
-.hours ul li {
-	list-style-type: none;
-	font-family: 'Lato', sans-serif;
-}
-
-.store-img {
+.hours {
 	display: inline-block;
+	width: 30%;
+	float: right;
+	line-height: 1.2em;
 }
 
-.store-img img {
-	max-width: 1200px;
-	margin-top: 20px;
+.hours li {
+	margin-left: 20px;
+	list-style-type: none;
 }
+
+.hours li span {
+	text-transform: uppercase;
+	line-height: 2em;
+}
+
+.hours .button {
+	margin-left: 20px;
+}
+
+.hours .button-secondary {
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -349,6 +380,7 @@ CATALOG.HTML
 	background-color: #F3F3F3;
   	background: url('https://dl.dropboxusercontent.com/u/51610047/cbt-site-files/images/hero-background.jpg');
   	height: 350px;
+  	background-color: #F2F2F2;
 }
 
 .container {
@@ -471,7 +503,7 @@ MEDIA QUERIES
 		margin-top: 50px;
 		display: inline-block;	
 	}
-5
+
 	.mobile-menu .wrapper {
 		float: right;
 		display: inline-block;
@@ -531,7 +563,51 @@ MEDIA QUERIES
 	.nav-item:active {
 		background-color: #f2f2f2;
 	}
+
+	/*Categories**********************/
+	.column {
+		display: inline-block;
+		width: 45%;
+		/*width: 24%;*/
+	}
+
+	/*.column li {
+		margin: 5px;
+		list-style-type: none;
+	}
+
+	.column ul {
+		padding: 0;
+	}*/
 	
+
+}
+
+@media screen and (max-width: 700px) {
+
+	iframe {
+		display: none;
+	}
+
+	.hours {
+		width: 100%;
+		float: left:;
+	}
+
+	.hours .button {
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.hours .button-secondary {
+		max-width: 100%;
+		margin-left: 0;
+	}
+
+	.hours li {
+		margin: 0;
+	}
+
 
 }
 
@@ -544,6 +620,39 @@ MEDIA QUERIES
 
 	.category {
 		width: 41%;
+	}
+
+	/*Categories**********************/
+	.column {
+		display: block;
+	}
+
+	.column li {
+		margin: 5px 5px 5px 0;
+		list-style-type: none;
+	}
+
+	.column ul {
+		margin: 5px;	
+	}
+
+	/*footer*/
+	.footer .left {
+		width: 100%;
+	}
+
+	.footer .middle {
+		width: 100%;
+	}
+
+	.footer .right {
+		width: 100%;
+		text-align: center;
+	}
+
+	.footer .right img {
+    	/*padding-top: 20px;*/
+    	text-align: ce
 	}
 
 
