@@ -102,6 +102,11 @@ GLOBAL ELEMENTS
 	text-transform: uppercase;
 }
 
+.utility-nav a:hover {
+	color: #272822;
+	text-decoration: underline;
+}
+
 .nav {
 	display: inline;
 }
@@ -122,11 +127,20 @@ GLOBAL ELEMENTS
 .nav a {
 	color: #1B1F4B;
 	text-transform: uppercase;
-	transition: color .1s ease-out;
+	transition: color .3s ease-out;
 }
 
 .nav a:hover {
 	color: #272822;
+	text-decoration: underline;
+}
+
+nav a.current {
+	border-bottom: 2px solid black;
+}
+
+.footer {
+	clear: both;
 }
 
 .footer-top {
@@ -145,7 +159,7 @@ GLOBAL ELEMENTS
 }
 
 .footer #logo {
-	width: 75%;
+	width: 50%;
 	/*margin: 5px;*/
 }
 
@@ -162,6 +176,11 @@ GLOBAL ELEMENTS
 
 .footer .middle li {
 	line-height: 1.5em;
+	text-align: left;
+}
+
+.footer li {
+	text-align: left;
 }
 
 .footer .middle img {
@@ -187,6 +206,12 @@ GLOBAL ELEMENTS
 	background-color: #2C328A;
 }
 
+.footer .heading {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+	
+
 
 
 /**********************************************************
@@ -199,6 +224,7 @@ INDEX.HTML
 .hero {
   background-color: #ff00ff;
   width: 100%;
+
 }
 
 /*hero*/
@@ -214,6 +240,7 @@ INDEX.HTML
 .hero .wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 30px;
 }
 
 .wrapper .hero-text {
@@ -234,6 +261,8 @@ INDEX.HTML
 
 .hero .button {
 	float: right;
+	padding-left: 60px;
+	padding-right: 60px;
 }
 
 
@@ -254,7 +283,7 @@ INDEX.HTML
 }
 	
 .products {
-	padding: 40px;
+	/*padding: 40px;*/
 }
 
 .products .wrapper {
@@ -283,6 +312,8 @@ INDEX.HTML
 
 .see-all{
 	height: 100px;
+	margin-top: 40px;
+
 }
 
 .button {
@@ -295,7 +326,8 @@ INDEX.HTML
     text-align: center;
 	letter-spacing: .02em;
     text-transform: uppercase;
-    background-color: #0dbdbb;
+    /*background-color: #0dbdbb;*/
+    background-color: #FA862B;
     transition: all .2s ease-out;
 	font-family: 'Lato', sans-serif;
 }
@@ -303,11 +335,14 @@ INDEX.HTML
 .button:hover {
 	cursor: pointer;
 	background-color: #0d9cc8;
+	background-color: #FBA360;
 }
 
 .button-secondary {
-    color: #0DBDBB;
-    border: 1px solid #0DBDBB;
+    /*color: #0DBDBB;*/
+    color: #FA862B;
+    /*border: 1px solid #0DBDBB;*/
+    border: 1px solid #FA862B;
     padding: 15px;
     margin: 0 auto;
     max-width: 200px;
@@ -323,9 +358,10 @@ INDEX.HTML
 
 .button-secondary:hover {
 	cursor: pointer;
-	background-color: #fff;
-	color: #0d9cc8;
-	border: 1px solid #0d9cc8;
+	/*background-color: #fff;*/
+	background-color: #FEF4EB;
+	/*color: #0d9cc8;*/
+	/*border: 1px solid #0d9cc8;*/
 }
 
 
@@ -357,15 +393,17 @@ STORE.HTML
 .hours .button-secondary {
 	margin-left: 20px;
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
+.find-us {
+	padding-bottom: 150px;
+	margin-top: 60px;
+}
 
-
-
-
-
-
-
+.find-us h2 {
+	margin: 0;
+}
 
 
 
@@ -435,12 +473,55 @@ MEDIA QUERIES
 
 
 	.category {
+		width: 25%;
+	}
+
+
+}
+
+@media screen and (max-width: 1024px) {
+
+
+	.category {
 		width: 29%;
 	}
 
 
 }
 
+@media screen and (max-width: 900px) {
+
+	/*Hero**********************/
+	.hero-text {
+		float: left;
+	}
+
+	.hero-text h1 {
+		text-align: center;
+	}
+
+	.hero-text h3 {
+		text-align: center;
+	}
+
+	.wrapper .hero-text {
+		width: 100%;
+	}
+
+	.hero-img {
+		display: none;
+	}
+
+	.hero-text .see-all .button {
+		width: 100%;
+	}
+
+
+	.footer #logo {
+		width: 100%;
+	}
+
+}
 
 @media screen and (min-width: 769px) {
 
@@ -552,8 +633,8 @@ MEDIA QUERIES
 		color: #000;
 		padding: 10px 0;
 		text-align: center;
-		background-color: #FFF;
-		border-top: 1px solid #f2f2f2;
+		background-color: #FAFAFA;
+		border-top: 1.5px solid #eeeeee;
 	}
 
 	.nav-item:hover {
@@ -579,7 +660,16 @@ MEDIA QUERIES
 	.column ul {
 		padding: 0;
 	}*/
+
 	
+
+}
+
+@media screen and (max-width: 759px) {
+
+	.category {
+		width: 40%;
+	}
 
 }
 
@@ -641,9 +731,14 @@ MEDIA QUERIES
 		width: 100%;
 	}
 
+	.footer .left li {
+		width: 100%;
+	}
+
 	.footer .middle {
 		width: 100%;
 	}
+
 
 	.footer .right {
 		width: 100%;
@@ -673,6 +768,56 @@ MEDIA QUERIES
 
 }
 
+
+@media screen and (min-width: 320px) {
+
+#gallery {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-align: center;
+}
+
+#gallery li {
+  float: left;
+  width: 45%;
+  margin: 2.5%;
+  background-color: white;
+  color: #bdc3c7;
+}
+
+#gallery li a p {
+  margin: 0;
+  padding: 5%;
+  font-size: 0.7em;
+
+}
+
+#gallery img {
+	max-width: 100%;
+}
+
+#gallery p {
+	color: red;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+}
+
+
+
+}
+
+@media screen and (min-width: 700px) {
+
+  #gallery li {
+    width: 28.3333%
+  }
+  
+  #gallery li:nth-child(4n) {
+    clear: left;
+  } 
+
+}
 
 
 
